@@ -168,7 +168,7 @@ for pkg0 in $@; do
     [ -d ${habs_dir}/${pkg1} ] && pkg=${pkg1}
     [ -d ${habs_dir}/haskell-${pkg1} ] && pkg=haskell-${pkg1}
     if [[ "x${pkg}" != "x" ]]; then
-        (cd ${habs_dir}/$pkg; buildpkg )
+        (cd ${habs_dir}/$pkg; buildpkg ) || exit 1
     else
         die "No such package: $pkg0" 
     fi
