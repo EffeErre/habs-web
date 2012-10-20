@@ -107,7 +107,6 @@ SigLevel = Never
 [haskell]
 Server = http://xsounds.org/~haskell/\$arch
 
-
 [haskell-web]
 Server = http://archhaskell.mynerdside.com/\$repo/\$arch
 
