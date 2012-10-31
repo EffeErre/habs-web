@@ -1,0 +1,13 @@
+Index: habs-web/haskell-persistent-mongodb/PKGBUILD
+===================================================================
+--- habs-web.orig/haskell-persistent-mongodb/PKGBUILD
++++ habs-web/haskell-persistent-mongodb/PKGBUILD
+@@ -40,7 +40,7 @@ build() {
+         --prefix=/usr --docdir=/usr/share/doc/${pkgname} \
+         --libsubdir=\$compiler/site-local/\$pkgid
+     runhaskell Setup build
+-    runhaskell Setup haddock
++#    runhaskell Setup haddock
+     runhaskell Setup register --gen-script
+     runhaskell Setup unregister --gen-script
+     sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh
