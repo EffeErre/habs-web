@@ -1,0 +1,7 @@
+*
+!cblrepo.db
+!makeahpkg
+!patches/
+!patches/*.pkgbuild
+!patches/*.cabal
+!.gitignore
