@@ -4,4 +4,5 @@
 !patches/
 !patches/*.pkgbuild
 !patches/*.cabal
+!patches/*.source
 !.gitignore

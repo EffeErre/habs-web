@@ -1,0 +1,23 @@
+Index: habs-web/haskell-snap/src/snap-0.10.0.1/src/Control/Access/RoleBased/Internal/Role.hs
+===================================================================
+--- habs-web.orig/haskell-snap/src/snap-0.10.0.1/src/Control/Access/RoleBased/Internal/Role.hs
++++ habs-web/haskell-snap/src/snap-0.10.0.1/src/Control/Access/RoleBased/Internal/Role.hs
+@@ -10,6 +10,7 @@ import           Data.Text (Text)
+ import qualified Data.Vector as V
+ import qualified Data.Vector.Algorithms.Merge as VA
+ 
++import           Data.Bits (xor)
+ 
+ ------------------------------------------------------------------------------
+ data RoleValue = RoleBool Bool
+@@ -85,3 +86,10 @@ data RoleMetadata = RoleMetadata {
+     , _roleDescription  :: Text
+     , _roleDataDefs     :: [RoleDataDefinition]
+     }
++
++------------------------------------------------------------------------------
++-- Combine taken from older version of Hashable, just to make it work
++-- | Combine two given hash values.  'combine' has zero as a left
++-- identity.
++combine :: Int -> Int -> Int
++combine h1 h2 = (h1 * 16777619) `xor` h2
