@@ -1,0 +1,12 @@
+Index: habs-web/haskell-th-orphans/PKGBUILD
+===================================================================
+--- habs-web.orig/haskell-th-orphans/PKGBUILD
++++ habs-web/haskell-th-orphans/PKGBUILD
+@@ -27,7 +27,6 @@ build() {
+         --prefix=/usr --docdir=/usr/share/doc/${pkgname} \
+         --libsubdir=\$compiler/site-local/\$pkgid
+     runhaskell Setup build
+-    runhaskell Setup haddock
+     runhaskell Setup register --gen-script
+     runhaskell Setup unregister --gen-script
+     sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh
