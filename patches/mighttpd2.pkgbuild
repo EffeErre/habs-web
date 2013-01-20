@@ -1,0 +1,11 @@
+Index: habs-web/mighttpd2/PKGBUILD
+===================================================================
+--- habs-web.orig/mighttpd2/PKGBUILD
++++ habs-web/mighttpd2/PKGBUILD
+@@ -49,4 +49,6 @@ build() {
+ package() {
+     cd ${srcdir}/${_hkgname}-${pkgver}
+     runhaskell Setup copy --destdir=${pkgdir}
++    # Executable mkindex conflict with texlive
++    mv $pkgdir/usr/bin/mkindex $pkgdir/usr/bin/mighty-mkindex
+ }
