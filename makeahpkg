@@ -104,8 +104,8 @@ SigLevel = Never
 #[repo]
 #Server = file:///repo
 
-[haskell]
-Server = http://xsounds.org/~haskell/\$arch
+[haskell-core]
+Server = http://www.kiwilight.com/haskell/core/$arch
 
 [haskell-web]
 Server = http://archhaskell.mynerdside.com/\$repo/\$arch
