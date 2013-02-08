@@ -6,8 +6,8 @@ Index: habs-web/haskell-postgresql-libpq/PKGBUILD
  license=("BSD3")
  arch=('i686' 'x86_64')
  makedepends=()
--depends=("ghc=7.6.1-1" "pq")
-+depends=("ghc=7.6.1-1" "postgresql-libs")
+-depends=("ghc=7.6.2-1" "pq")
++depends=("ghc=7.6.2-1" "postgresql-libs")
  options=('strip')
  source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
  install="${pkgname}.install"
