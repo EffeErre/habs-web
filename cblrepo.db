@@ -192,7 +192,6 @@
 ["direct-sqlite",{"RepoPkg":[{"Version":"2.3.3.1"},[{"Dependency":"base >=4.1 && <5"},{"Dependency":"bytestring >=0.9.2.1 && <1"},{"Dependency":"text >=0.11 && <1"}],"2"]}]
 ["directory-tree",{"RepoPkg":[{"Version":"0.11.0"},[{"Dependency":"base <5"},{"Dependency":"directory <2"},{"Dependency":"filepath <2"}],"2"]}]
 ["distributive",{"RepoPkg":[{"Version":"0.3.1"},[{"Dependency":"base >=4 && <5"},{"Dependency":"transformers >=0.2 && <0.4"},{"Dependency":"transformers-compat >=0.1 && <0.2"}],"1"]}]
-["dyre",{"RepoPkg":[{"Version":"0.8.11"},[{"Dependency":"base >=4 && <5"},{"Dependency":"binary -any"},{"Dependency":"directory -any"},{"Dependency":"executable-path -any"},{"Dependency":"filepath -any"},{"Dependency":"ghc-paths -any"},{"Dependency":"io-storage -any"},{"Dependency":"process -any"},{"Dependency":"time -any"},{"Dependency":"unix -any"},{"Dependency":"xdg-basedir -any"}],"4"]}]
 ["either",{"RepoPkg":[{"Version":"3.4"},[{"Dependency":"MonadRandom ==0.1.*"},{"Dependency":"base >=4 && <5"},{"Dependency":"mtl >=2.0 && <2.2"},{"Dependency":"semigroupoids >=3 && <4"},{"Dependency":"semigroups >=0.8.3.1 && <1"},{"Dependency":"transformers >=0.2 && <0.4"}],"1"]}]
 ["either-unwrap",{"RepoPkg":[{"Version":"1.1"},[{"Dependency":"base >=3 && <5"}],"3"]}]
 ["email-validate",{"RepoPkg":[{"Version":"1.0.0"},[{"Dependency":"attoparsec >=0.10.0"},{"Dependency":"base >=4 && <5"},{"Dependency":"bytestring >=0.9"}],"1"]}]
