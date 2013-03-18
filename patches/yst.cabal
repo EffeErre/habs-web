@@ -1,0 +1,11 @@
+--- yst.cabal.orig	2013-03-15 09:29:57.135917543 +0100
++++ yst.cabal	2013-03-15 09:30:13.512303381 +0100
+@@ -55,7 +55,7 @@
+   other-modules:     Yst.Types, Yst.Yaml, Yst.Util, Yst.Data, Yst.Config,
+                      Yst.Render, Yst.Build, Yst.CSV, Yst.Sqlite3
+   build-depends:     base >=3 && < 5,
+-                     HStringTemplate >= 0.6.1 && < 0.6.9 || > 0.6.11 && < 0.7,
++                     HStringTemplate >= 0.6.1 && < 0.6.9 || > 0.6.11 && < 0.8,
+                      HsSyck, csv,
+                      filepath, containers, directory, utf8-string, time,
+                      old-locale, old-time, parsec, xhtml,
