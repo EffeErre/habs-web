@@ -1,0 +1,13 @@
+Index: habs-web/c2hs/PKGBUILD
+===================================================================
+--- habs-web.orig/c2hs/PKGBUILD
++++ habs-web/c2hs/PKGBUILD
+@@ -11,7 +11,7 @@ url="http://www.cse.unsw.edu.au/~chak/ha
+ license=("GPL-2")
+ arch=('i686' 'x86_64')
+ makedepends=("ghc=7.6.2-1"
+-             "haskell-language-c=0.3.2.1-27")
++             "haskell-language-c3=0.3.2.1-27")
+ depends=()
+ options=('strip')
+ source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
