@@ -1,0 +1,14 @@
+Index: habs-web/haskell-gsasl/PKGBUILD
+===================================================================
+--- habs-web.orig/haskell-gsasl/PKGBUILD
++++ habs-web/haskell-gsasl/PKGBUILD
+@@ -12,7 +12,8 @@ license=("GPL-3")
+ arch=('i686' 'x86_64')
+ makedepends=()
+ depends=("ghc=7.6.2-1"
+-         "haskell-transformers=0.3.0.0-26")
++         "haskell-transformers=0.3.0.0-26"
++         "gsasl")
+ options=('strip')
+ source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+ install="${pkgname}.install"
