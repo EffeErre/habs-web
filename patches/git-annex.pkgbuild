@@ -2,10 +2,10 @@ Index: habs-web/git-annex/PKGBUILD
 ===================================================================
 --- habs-web.orig/git-annex/PKGBUILD
 +++ habs-web/git-annex/PKGBUILD
-@@ -63,11 +63,26 @@ makedepends=("ghc=7.6.2-1"
-              "haskell-yesod-default=1.1.3.2-12"
-              "haskell-yesod-form=1.2.1.3-11"
-              "haskell-yesod-static=1.1.2.2-11")
+@@ -64,11 +64,26 @@ makedepends=("ghc=7.6.2-1"
+              "haskell-yesod-default=1.1.3.2-13"
+              "haskell-yesod-form=1.2.1.3-12"
+              "haskell-yesod-static=1.1.2.2-12")
 -depends=()
 +depends=("git"
 +         "findutils"
@@ -23,8 +23,8 @@ Index: habs-web/git-annex/PKGBUILD
 +source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
 +        ${pkgname}.png ${pkgname}.desktop ${pkgname}-autostart.desktop)
  
--sha256sums=("1f940d88b8ef91e18155a778b3665c7151f61567945259d41921e389beab779f")
-+sha256sums=("1f940d88b8ef91e18155a778b3665c7151f61567945259d41921e389beab779f"
+-sha256sums=("128814026ff39983960b081d751b6e4fc44073fc1c2ee59989da7f5d999b8b9a")
++sha256sums=("128814026ff39983960b081d751b6e4fc44073fc1c2ee59989da7f5d999b8b9a"
 +            "db2d0d2c2585667d9459b81aed1fbcbd85884968411d5af68fa94ca15bcd8a11"
 +            "3b6c97edeaf5e696c1805e5a4d4f4e73be596baa66b358c215a25306c06a9e23"
 +            "6e47b22f56e573b7097921f2683498eee9abe983ca1c359260b5b7458cf0ad28"
@@ -32,7 +32,7 @@ Index: habs-web/git-annex/PKGBUILD
  
  # PKGBUILD functions
  build() {
-@@ -81,4 +96,8 @@ build() {
+@@ -82,4 +97,8 @@ build() {
  package() {
      cd ${srcdir}/${_hkgname}-${pkgver}
      runhaskell Setup copy --destdir=${pkgdir}
